@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>静夜灯下分享会 · Night Lamp Sharing</title>
+<style>
+/* ===== 页面主体容器 ===== */
+.page {
+  display: inline-block;
+  background-color: #E8FFF4;              /* 薄荷牛奶绿 */
+  box-shadow: 0 0 30px rgba(80, 58, 35, 0.25);
+  text-align: left;
+  max-width: 720px;
+}
+
+body {
+  margin: 0;
+  padding: 28px 12px;
+  text-align: center;
+  background-color: #cfeade;
+  font-family: "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+}
+
+/* ===== 并集选择器 ===== */
+h1, h2, h3, h4, h5, h6 {
+  font-family: Georgia, "Microsoft YaHei", serif;
+  color: #1f5545;
+  margin: 0 0 12px 0;
+  letter-spacing: 1px;
+}
+
+/* ===== ① 顶部标题区 ===== */
+.header {
+  padding: 30px 34px 20px 34px;
+  border-bottom: 1px dashed #a9d8c6;
+}
+.header h1 {
+  font-size: 30px;
+  line-height: 1.35;
+  margin-bottom: 8px;
+}
+.header p {
+  margin: 0;
+  font-size: 15px;
+  color: #4d7d6c;
+  letter-spacing: 2px;
+}
+
+/* ===== ② 活动介绍区 ===== */
+.activity {
+  padding: 22px 34px 6px 34px;
+}
+.activity h2 {
+  font-size: 22px;
+  border-left: 6px solid #4fae8c;
+  padding-left: 10px;
+}
+.activity p {
+  font-size: 15px;
+  line-height: 1.9;
+  color: #33574b;
+  margin: 0 0 12px 0;
+}
+
+/* ===== ID 选择器 ===== */
+p#intro {
+  font-size: 19px;
+  font-weight: bold;
+  color: #b03a2e;
+  background-color: #fff1ef;
+  border-left: 6px solid #b03a2e;
+  padding: 12px 16px;
+  line-height: 1.75;
+}
+
+/* ===== ③ 报名信息表格区 ===== */
+.signup {
+  padding: 14px 34px 24px 34px;
+}
+.signup h3 {
+  font-size: 20px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 8px;
+}
+th, td {
+  border: 1px solid #a9d8c6;
+  padding: 9px 10px;
+  font-size: 14px;
+  color: #33574b;
+  text-align: center;
+}
+th {
+  background-color: #c9ecdd;
+  color: #1f5545;
+  font-size: 15px;
+}
+tr:nth-child(even) td {
+  background-color: #f6fdfa;
+}
+
+/* ===== 后代选择器 ===== */
+div table a {
+  display: inline-block;
+  padding: 2px 9px;
+  font-size: 13px;
+  background-color: #e0f5ec;
+  border: 1px solid #7cc4a8;
+  border-radius: 10px;
+}
+
+/* ===== ④ 页面链接区 ===== */
+.links {
+  padding: 18px 34px;
+  border-top: 1px dashed #a9d8c6;
+}
+.links div {
+  line-height: 2;
+}
+.links a {
+  margin-right: 26px;
+  font-size: 16px;
+}
+
+/* ===== ⑤ 底部公告区 ===== */
+.notice {
+  padding: 18px 34px 26px 34px;
+  background-color: #f3fdf9;
+  border-top: 1px solid #bfe3d4;
+}
+.notice p {
+  margin: 0 0 10px 0;
+  font-size: 14.5px;
+  line-height: 1.85;
+  color: #3d6b5c;
+}
+.notice p:last-child {
+  margin-bottom: 0;
+}
+
+/* ===== 链接伪类 ===== */
+a:link    { color: #2f7d63; text-decoration: none; }
+a:visited { color: #6b5a9c; }
+a:hover   { color: #c0392b; text-decoration: underline; }
+a:active  { color: #1b1b1b; }
+
+/* ===== 带类名的链接 ===== */
+a.red  { color: #c0392b; font-weight: bold; }
+a.red:hover  { color: #7b241c; text-decoration: underline; }
+a.blue { color: #1f6fb2; font-weight: bold; }
+a.blue:hover { color: #14496f; text-decoration: underline; }
+
+/* ===== 伪元素 ===== */
+p::first-letter {
+  font-size: 1.55em;
+  font-weight: bold;
+  color: #1f7a5c;
+}
+div::first-line {
+  letter-spacing: 0.6px;
+  color: #2a5f50;
+}
+</style>
+</head>
+
+<body>
+<div class="page">
+
+  <!-- ① 顶部标题区 -->
+  <div class="header">
+    <h1>静夜灯下分享会 · Night Lamp Sharing</h1>
+    <p>一盏灯 · 一本书 · 一段安静的对话</p>
+  </div>
+
+  <!-- ② 活动介绍区 -->
+  <div class="activity">
+    <h2 id="intro">活动介绍</h2>
+    <p>静夜灯下分享会由校园读书社团「灯下」发起。每两周的周六晚上，我们会在图书馆三层的一角点亮几盏小灯，大家围坐在一起，把自己最近读到的、想到的、写下的一段文字，轻声读给彼此听。</p>
+    <p>我们不追求读完多少本，也不比较谁的见解更深刻。这里只有一条规矩：说话慢一点，听人认真一点。你可以带一本翻了很久的书，也可以只带一张写着疑问的便签纸，坐下来就已经是参与了。</p>
+    <p id="intro">重要提示：本活动为纯公益读书交流，不收取任何费用。为保证分享质量，每场限 12 人，请报名后准时到场，迟到超过 15 分钟将视为自动放弃名额。</p>
+  </div>
+
+  <!-- ③ 报名信息表格区 -->
+  <div class="signup">
+    <h3>本期报名信息</h3>
+    <table>
+      <tr>
+        <th>姓名</th>
+        <th>分享主题</th>
+        <th>参加场次</th>
+        <th>往期回看</th>
+      </tr>
+      <tr>
+        <td>林知远</td>
+        <td>《夜航西飞》里的飞行与孤独</td>
+        <td>第 12 期</td>
+        <td><a href="https://hongchenwusdnu.github.io/bookstore/job4.html">回看</a></td>
+      </tr>
+      <tr>
+        <td>苏晴</td>
+        <td>灯下读诗：从唐诗到现代诗</td>
+        <td>第 12 期</td>
+        <td>暂无</td>
+      </tr>
+      <tr>
+        <td>陈墨白</td>
+        <td>科幻小说里的深夜宇宙</td>
+        <td>第 13 期</td>
+        <td>暂无</td>
+      </tr>
+      <tr>
+        <td>周予安</td>
+        <td>旅行文学与窗外的一盏灯</td>
+        <td>第 13 期</td>
+        <td><a href="https://hongchenwusdnu.github.io/bookstore/job4.html">回看</a></td>
+      </tr>
+      <tr>
+        <td>阿雅</td>
+        <td>绘本里那些安静的力量</td>
+        <td>第 13 期</td>
+        <td>暂无</td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- ④ 页面链接区 -->
+  <div class="links">
+    <div>
+      <a class="red" href="https://hongchenwusdnu.github.io/bookstore/job4.html">查看往期活动照片 · 灯下剪影</a>
+      <!--  -->
+      <a class="blue" href="zhang-0231-work3.html">在线咨询活动详情 · 灯下问答</a>
+    </div>
+  </div>
+
+  <!-- ⑤ 底部公告区 -->
+  <div class="notice">
+    <p>【公告一】分享会每两周的周六 19:30 在图书馆三层「灯下角」举行，请提前十分钟入场，手机请调至静音。<br>散场后请把椅子归位、把灯熄好。</p>
+    <p>【公告二】每位同学分享时间不超过 8 分钟，可以带纸质书、电子阅读器或手写笔记。<br>现场提供温水、台灯与便签纸，无需自带。</p>
+    <p>【公告三】报名后如需请假，请提前一天在活动群内说明。<br>想先看看往期灯下分享的氛围，可点这里：
+      <a href="https://hongchenwusdnu.github.io/bookstore/job4.html">教师示例页面 · 灯下回看</a>
+    </p>
+  </div>
+
+</div>
+</body>
+</html>
